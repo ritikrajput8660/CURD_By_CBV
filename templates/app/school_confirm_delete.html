@@ -1,0 +1,24 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>Home Html</title>
+
+{% endblock %}
+
+
+{% block body_block %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="submit" value="Yes-Delete">
+    </form>
+    <a href="{% url 'list' %}">NO Take Me back</a>
+
+
+{% endblock %}
+
+
+
+
+

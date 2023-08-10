@@ -1,0 +1,19 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>List Html</title>
+
+{% endblock %}
+
+
+{% block body_block %}
+<h1>School List is</h1>
+<ol>
+    {% for i in schools %}
+        <a href="{{i.id}}"><li>{{i.name}}</li></a>
+    {% endfor %}
+</ol>
+{% endblock %}
+
+
+
